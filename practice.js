@@ -31,7 +31,7 @@ var favouriteThings = {
 }
 
 
-**Get help**//After you've made your object, add another key named 'car' with the value being your favorite 
+//After you've made your object, add another key named 'car' with the value being your favorite 
 //car and then another key named 'brand' with the value being your favorite brand.
 
 favouriteThings[car] = {car: 'convertable'};
@@ -171,7 +171,9 @@ var user = {
 that each value is truthy. If it's not truthy, remove it from the object. */
 **
 for(var key in user) {
-  if(!user)
+  if(!user === true) {
+    delete [key];
+  }
 }
 
 //Once you get your truthy Object, Change the remaining values in the object to be specific to you 
